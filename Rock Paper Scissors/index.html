@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="g-name">Rock Paper Scissors</h1>
+        <div class="game-container">
+            <div id="rock" class="choice-box"><i class="fa-regular fa-hand-back-fist"></i></div>
+            <div id="paper" class="choice-box"><i class="fa-regular fa-hand"></i></div>
+            <div id="scissor" class="choice-box"><i class="fa-regular fa-hand-scissors"></i></div>
+        </div>
+        <div class="comparision">
+            <div class="comparision-box">
+                <h4>Computer</h4>
+                <div class="computer-choise chosen-box"></div>
+            </div>
+            <div class="comparision-box">
+                <h4>You</h4>
+                <div class="your-choise chosen-box"></div>
+            </div>
+            <div class="result">
+                <div class="win-points">
+                    <p>Win</p>
+                    <div class="win-points-count">0</div>
+                </div>
+                <div class="loss-points">
+                    <p>Loss</p>
+                    <div class="loss-points-count">0</div>
+                </div>
+                <div class="draw-points">
+                    <p>Draw</p>
+                    <div class="draw-points-count">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-div">
+            <p id="msg">Choose any Symbol to Start!</p>
+            <button id="reset-btn">Reset Game</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
